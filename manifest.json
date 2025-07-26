@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Scrollbar Visível",
+  "description": "Deixa o polegar da barra de rolagem sempre em contraste.",
+  "version": "1.0",
+  "author": "Cristina",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": ["<all_urls>"]
+}
