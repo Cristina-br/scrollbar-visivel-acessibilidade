@@ -13,6 +13,7 @@ Esta extensão personaliza a aparência das barras de rolagem (scrollbars) em to
 - **Alto contraste**: Polegar preto com borda branca para máxima visibilidade
 - **Compatibilidade universal**: Funciona em fundos claros e escuros
 - **Barra mais espessa**: 16px de largura para melhor usabilidade
+- **Botões de navegação**: Setinhas visíveis para cima e para baixo
 - **Design limpo**: Sem rastros visuais ou vazamentos durante o uso
 - **Aplicação forçada**: Usa `!important` para sobrescrever estilos de sites
 
@@ -20,9 +21,10 @@ Esta extensão personaliza a aparência das barras de rolagem (scrollbars) em to
 
 - **Largura da scrollbar**: 16px
 - **Cor do polegar**: Preto sólido (`rgba(20, 20, 20, 1)`)
-- **Borda**: Branca de 2px (`rgba(255,255,255,1)`)
+- **Borda do polegar**: Branca de 2px (`rgba(255,255,255,1)`)
+- **Botões de navegação**: Cinza escuro (`rgba(40, 40, 40, 1)`) com borda branca
 - **Trilha**: Transparente (herda o fundo da página)
-- **Bordas arredondadas**: 8px de border-radius
+- **Bordas arredondadas**: 8px no polegar, 4px nos botões
 
 ## 🚀 Como Instalar
 
@@ -49,6 +51,7 @@ A extensão injeta CSS personalizado usando webkit-scrollbar pseudo-elementos:
 - `::-webkit-scrollbar` - Define o tamanho da barra
 - `::-webkit-scrollbar-track` - Estiliza a trilha (fundo)
 - `::-webkit-scrollbar-thumb` - Estiliza o polegar (parte arrastável)
+- `::-webkit-scrollbar-button` - Estiliza os botões de navegação (setinhas)
 
 O script é executado em `document_start` para garantir que seja aplicado antes do carregamento completo da página.
 
