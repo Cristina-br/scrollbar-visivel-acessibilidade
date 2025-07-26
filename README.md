@@ -70,4 +70,4 @@ Este projeto é de uso pessoal e educacional.
 
 ---
 
-*Última atualização: Janeiro 2025*
+*Última atualização: Julho 2025*
